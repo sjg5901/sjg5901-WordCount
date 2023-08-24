@@ -8,7 +8,8 @@ public class ReturnWordCount {
         
         // .split() returns an array of all words
         // .length is an array method that returns the number of elements present in the array
+        // .trim() added in case of leading or trailing spaces that may result in more chars in split() array
 
-        return in.split(" ").length;
+        return in.trim().split(" ").length;
     }
 }
